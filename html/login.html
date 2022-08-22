@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <article>
+      <section>
+        <header>
+          <h1>Sign in or Create an Account</h1>
+        </header>
+        <small>*Indicates required field</small>
+        <form action="#" method="post">
+          <label for="email">Username or email address</label>
+          <input type="text" name="uname" required 
+           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+          <label for="password">Password</label>
+          <input type="password" name="password" required 
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          />
+          <input type="checkbox" name="check" />
+          <span>
+            Keep me sign in
+            <img src="../img/question.png" alt="Question Mark" />
+          </span>
+          <small
+            >Checking this box will reduce the number of times you’re asked to
+            sign in. To keep your account secure, use this option only on your
+            personal devices.
+          </small>
+          <a href="./forget_uname.html">Forget your Username?</a>
+          <a href="./forget_pass.html">Forget your Password?</a>
+          <button type="submit">Sign in</button>
+        </form>
+      </section>
+      <section>
+        <footer>
+          <h3>Join our Rewards</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus </p>
+          <button>Join now</button>
+        </footer>
+      </section>
+  </body>
+</html>
