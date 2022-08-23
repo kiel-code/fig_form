@@ -11,7 +11,12 @@
     <section>
       <form action="#" method="post">
         <label for="uname">Username</label>
-        <input type="text" name="uname" required />
+        <input
+          type="text"
+          name="uname"
+          pattern="^[A-Za-z]{3,}\s[A-Za-z]{3,}||[A-Za-z]{3,}\s[A-Za-z]{3,}\s[A-Za-z]{3,}$"
+          required
+        />
         <button type="submit">Reset Uname</button>
       </form>
     </section>

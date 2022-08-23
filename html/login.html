@@ -9,19 +9,28 @@
   </head>
   <body>
     <article>
-      <section>
+      <section id="content">
         <header>
           <h1>Sign in or Create an Account</h1>
         </header>
         <small>*Indicates required field</small>
         <form action="#" method="post">
-          <label for="email">Username or email address</label>
-          <input type="text" name="uname" required 
-           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
-          <label for="password">Password</label>
-          <input type="password" name="password" required 
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          <label for="uname">Username or email address</label>
+          <input
+            type="text"
+            name="uname"
+            pattern="^[A-Za-z]{3,}\s[A-Za-z]{3,}||[A-Za-z]{3,}\s[A-Za-z]{3,}\s[A-Za-z]{3,}$"
+            required
           />
+
+          <label for="pwd">Password</label>
+          <input
+            type="password"
+            name="pwd"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            required
+          />
+
           <input type="checkbox" name="check" />
           <span>
             Keep me sign in
@@ -32,17 +41,27 @@
             sign in. To keep your account secure, use this option only on your
             personal devices.
           </small>
-          <a href="./forget_uname.html">Forget your Username?</a>
-          <a href="./forget_pass.html">Forget your Password?</a>
+
+          <nav>
+            <a href="./forget_uname.html">Forget your Username?</a>
+            <a href="./forget_pass.html">Forget your Password?</a>
+          </nav>
+
           <button type="submit">Sign in</button>
         </form>
       </section>
-      <section>
+
+      <section id="footer">
         <footer>
           <h3>Join our Rewards</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Morbi lobortis maximus
+          </p>
           <button>Join now</button>
         </footer>
       </section>
+    </article>
   </body>
 </html>
