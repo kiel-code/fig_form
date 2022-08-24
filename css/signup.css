@@ -2,21 +2,36 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 80%;
-  width: 80%;
-  background-color: #f5f5f5;
+  margin: auto;
   font-family: "Poppins", sans-serif;
-  /* position: relative; */
+  background-color: #f5f5f5;
+  border: 0.2em dotted red;
 }
 
 article {
-  /* width: auto;
-  height: 10%; */
+  width: 41.5625em;
+  height: 64em;
+  background-color: #ffffff;
+  position: relative;
+  left: 6em;
+  top: 4em;
+  border: 2px solid greenyellow;
 }
 
-section #image {
+section {
+  width: 37.3125em;
+  height: 50.5625em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  position: absolute;
+  left: 5.5em;
+  top: 5.5em;
+  border: 2px solid rgb(255, 47, 220);
+}
+
+figure {
   width: 37.3125em;
   height: 64em;
   position: absolute;
@@ -33,5 +48,18 @@ img {
 }
 
 header {
+  border: 2px solid rgb(202, 45, 176);
+  width: 32.0625em;
+  height: 4.875em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125em;
+}
+
+header h1 {
+  height: 3em;
   font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 2em;
+  color: #333333;
 }
