@@ -2,65 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <article>
-      <section id="content">
-        <header>
-          <h1>Sign in or Create an Account</h1>
-        </header>
-        <small>*Indicates required field</small>
-        <form action="#" method="post">
-          <label for="uname">Username or email address</label>
-          <input
-            type="text"
-            name="uname"
-            pattern="^[A-Za-z]{3,}\s[A-Za-z]{3,}||[A-Za-z]{3,}\s[A-Za-z]{3,}\s[A-Za-z]{3,}$"
-            required
-          />
+    <article id="login">
+      <h1>Sign in or create an account</h1>
+      <form action="#" method="POST"></form>
+      <section id="join">
+        <h2>Join our rewards</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus.</p>
 
-          <label for="pwd">Password</label>
-          <input
-            type="password"
-            name="pwd"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            required
-          />
-
-          <input type="checkbox" name="check" />
-          <span>
-            Keep me sign in
-            <img src="../img/question.png" alt="Question Mark" />
-          </span>
-          <small
-            >Checking this box will reduce the number of times you’re asked to
-            sign in. To keep your account secure, use this option only on your
-            personal devices.
-          </small>
-
-          <nav>
-            <a href="./forget_uname.html">Forget your Username?</a>
-            <a href="./forget_pass.html">Forget your Password?</a>
-          </nav>
-
-          <button type="submit">Sign in</button>
-        </form>
-      </section>
-
-      <section id="footer">
-        <footer>
-          <h3>Join our Rewards</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Morbi lobortis maximus
-          </p>
-          <button>Join now</button>
-        </footer>
+        <button type="button">Join now</button>
       </section>
     </article>
   </body>
