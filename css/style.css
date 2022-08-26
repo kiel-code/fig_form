@@ -28,7 +28,6 @@ section#form_content {
   left: 5.5rem;
   top: 5.5rem;
   gap: 2rem;
-  border: 0.4rem solid red;
 }
 
 header h1{
@@ -54,7 +53,6 @@ section#image img {
   position: absolute;
   left: 48.625rem;
   top: 0.875rem;
-  border: 0.4rem solid rgb(0, 110, 255);
 }
 
 input {
