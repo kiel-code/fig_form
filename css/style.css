@@ -27,7 +27,7 @@ section#form_content {
   justify-content: flex-end;
   position: absolute;
   left: 5.5rem;
-  top: 5.5rem;
+  top: 6.5rem;
   gap: 2rem;
 }
 
@@ -43,8 +43,9 @@ header small {
   padding: 0.125em;
 }
 
-header small, a {
-  color: inherit;
+small.acc, a {
+  color: #111111;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -87,7 +88,7 @@ ul li {
   font-size: 0.875rem;
   line-height: 1.6125rem;
   margin-right: 1.2rem;
-  margin-left: 0.5rem;
+  margin-left: 0.99rem;
 }
 
 figure, img, p#agreed {
@@ -112,13 +113,15 @@ p#agreed {
 button#sub {
   width: 16rem;
   height: 4rem;
+  display: block;
   font-weight: 500;
   font-size: 1.375rem;
-  line-height: 2.0625rem;
   background: #111111;
   color: #FFFFFF;
-  opacity: 0.25;
   border-radius: 2rem;
+  margin-bottom: 1.2rem;
+  line-height: 2.0625rem;
+  opacity: 0.25;
 }
 
 /* login styling */
