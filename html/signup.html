@@ -44,23 +44,29 @@
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             required
           />
-          <ul id="login_list">
-            <li>Use 8 or more characters</li>
-            <li>One Uppercase character</li>
-            <li>One lowercase character</li>
-            <li>One special character</li>
-            <li>One number character</li>
+          <ul id="pattern">
+            <section class="set">
+              <li>Use 8 or more characters</li>
+              <li>One special character</li> 
+            </section>
+            <section class="set">
+              <li>One Uppercase character</li>
+              <li>One number</li>
+            </section>
+            <section class="set">
+              <li>One lowercase character</li> 
+            </section>
           </ul>
-
-          <input type="checkbox" name="email" />
-          <span>
-            I want to receive emails about the product, feature updates, events,
-            and marketing promotions
+          <figure>
+            <img src="../img/checkbox.png" alt="checkbox">
+          <span id="option">
+            I want to receive emails about the product, feature updates, events, and marketing promotions
           </span>
+        </figure>
 
-          <p>By creating an account, you agreed to the</p>
+          <p id="agreed">By creating an account, you agreed to the</p>
 
-          <button type="submit">Create an Account</button>
+          <button type="submit" id="sub">Create an Account</button>
 
           <p>
             Already have an Account
