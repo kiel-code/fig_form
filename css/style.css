@@ -19,6 +19,16 @@ div {
   position: relative;
 }
 
+div#radius {
+  width: 2rem;
+  height: 2rem;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.1rem;
+}
+
 section#form_content {
   width: 41.5625rem;
   display:flex;
@@ -49,6 +59,13 @@ small.acc, a {
   line-height: 1.5rem;
 }
 
+a:visited {
+  color: rgb(146, 80, 14);
+}
+
+a:hover {
+  color: rgb(41, 41, 61);
+}
 
 section#image img {
   width: 37.3125em;
@@ -66,6 +83,13 @@ input {
   margin-bottom: 2rem;
   padding: 0.9rem;
   color: #666666;
+}
+
+input:focus {
+  box-shadow: 0.1rem 0.02rem 0.3rem 0.2rem rgb(66, 40, 14);
+  box-shadow: 0.01rem 0.03rem 0.4rem 0.3rem rgb(66, 40, 14);
+  box-shadow: 0.02rem 0.1rem 0.01rem 0.1rem rgb(66, 40, 14);
+  box-shadow: 0.01rem 0.2rem 0.1rem 0.4rem rgb(66, 40, 14);
 }
 
 ul#pattern {
@@ -122,6 +146,10 @@ button#sub {
   margin-bottom: 1.2rem;
   line-height: 2.0625rem;
   opacity: 0.25;
+}
+
+button:focus {
+  box-shadow: 0.1rem 0.02rem 0.3rem 0.2rem rgb(180, 105, 30);
 }
 
 /* login styling */
