@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <article id="login">
+    <article class="login">
       <header>
         <div id="header"></div>
         <img src="../img/divider.png" alt="Divider">
       </header>
       <h1>Sign in or create an account</h1>
-      <form action="#" method="POST" id="login_form">
+      <form action="#" method="POST" class="login_form">
         <p id="note">*indicates required field</p>
-        <label for="username">Username</label>
+        <label for="username">Username  or email adress</label>
           <input
             type="text"
             name="username"
@@ -35,11 +35,13 @@
             required
           />
 
+          <figure>
           <img src="../img/checkbox.png" alt="checkbox">
-          <span id="keep">
+          <span class="option">
             Keep me sign in
             <img src="../img/question.png" alt="Question Mark">
           </span>
+          </figure>
           <small>
             Checking this box will reduce the number of times you’re asked to sign in. To keep your account secure, use this option only on your personal devices.
           </small>

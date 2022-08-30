@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forget Uname</title>
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <section>
-      <form action="#" method="post">
-        <label for="uname">Username</label>
+    <article class="login">
+      <header>
+        <div id="header"></div>
+        <img src="../img/divider.png" alt="Divider">
+      </header>
+      <h1>Reset your username or email</h1>
+      <form action="#" method="POST" class="login_form">
+
+        <nav class="back">
+          <a href="./login.html">Login</a>
+        </nav>
+
+        <label for="uname">Username  or email address</label>
         <input
           type="text"
           name="uname"
           pattern="^[A-Za-z]{3,}\s[A-Za-z]{3,}||[A-Za-z]{3,}\s[A-Za-z]{3,}\s[A-Za-z]{3,}$"
           required
         />
-        <button type="submit">Reset Uname</button>
+        <button type="submit" class="reset">Reset Uname</button>
       </form>
-    </section>
-    <a href="./login.html">Login</a>
+    </article>
   </body>
 </html>

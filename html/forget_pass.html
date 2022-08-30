@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forget Password</title>
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <section>
-      <form action="#" method="post">
+    <article class="login">
+      <header>
+        <div id="header"></div>
+        <img src="../img/divider.png" alt="Divider">
+      </header>
+      <h1>Reset your password</h1>
+      <form action="#" method="POST" class="login_form">
+
+        <nav class="back">
+          <a href="./login.html">Login</a>
+        </nav>
+
         <label for="pwd">Password</label>
         <input
           type="password"
@@ -17,9 +30,7 @@
           required
           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
         />
-        <button type="submit">Reset Pword</button>
+        <button type="submit" class="reset">Reset Pword</button>
       </form>
-    </section>
-    <a href="./login.html">Login</a>
   </body>
 </html>
