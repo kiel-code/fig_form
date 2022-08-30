@@ -54,7 +54,7 @@ header small {
 }
 
 small.acc, a {
-  color: #111111;
+  color: rgb(17, 17, 17);
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -86,10 +86,11 @@ input {
 }
 
 input:focus {
-  box-shadow: 0.1rem 0.02rem 0.3rem 0.2rem rgb(66, 40, 14);
-  box-shadow: 0.01rem 0.03rem 0.4rem 0.3rem rgb(66, 40, 14);
-  box-shadow: 0.02rem 0.1rem 0.01rem 0.1rem rgb(66, 40, 14);
-  box-shadow: 0.01rem 0.2rem 0.1rem 0.4rem rgb(66, 40, 14);
+  box-shadow:
+  0.1rem 0.02rem 0.3rem 0.2rem rgb(66, 40, 14),
+  0.01rem 0.03rem 0.4rem 0.3rem rgb(66, 40, 14),
+  0.02rem 0.1rem 0.01rem 0.1rem rgb(66, 40, 14),
+  0.01rem 0.2rem 0.1rem 0.4rem rgb(66, 40, 14);
 }
 
 ul#pattern {
