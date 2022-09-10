@@ -16,7 +16,6 @@ div {
   width: 44.7%;
   background-color: #ffffff;
   color: #666666;
-  position: relative;
 }
 
 div#radius {
@@ -34,18 +33,17 @@ section#form_content {
   display:flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
-  position: absolute;
-  left: 5.5rem;
-  top: 6.5rem;
-  gap: 2rem;
+  margin-top: 5.5rem;
+  margin-left: 5.5rem;
+  margin-bottom: 7.9375rem;
+  /* gap: 2rem; */
 }
 
 header h1{
   font-weight: 500;
   font-size: 2rem;
   line-height: 3rem;
-  color: #333333;
+  color: rgb(51, 51, 51);
 }
 
 header small {
@@ -59,12 +57,20 @@ small.acc, a {
   line-height: 1.5rem;
 }
 
+a:link {
+  color: rgb(17, 17, 17);
+}
+
 a:visited {
   color: rgb(146, 80, 14);
 }
 
 a:hover {
-  color: rgb(41, 41, 61);
+  color: rgb(238, 238, 61);
+}
+
+a:active {
+  color: rgb(31, 34, 214);
 }
 
 section#image img {
@@ -80,7 +86,7 @@ input {
   border: 0.0625rem solid rgba(102, 102, 102, 0.35);
   border-radius: 0.75rem;
   margin-top: 0.4375rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
   padding: 0.9rem;
   color: #666666;
 }
@@ -88,28 +94,17 @@ input {
 input:focus {
   box-shadow:
   0.1rem 0.02rem 0.3rem 0.2rem rgb(66, 40, 14),
-  0.01rem 0.03rem 0.4rem 0.3rem rgb(66, 40, 14),
-  0.02rem 0.1rem 0.01rem 0.1rem rgb(66, 40, 14),
-  0.01rem 0.2rem 0.1rem 0.4rem rgb(66, 40, 14);
+  0.01rem 0.03rem 0.4rem 0.3rem rgb(66, 40, 14);
 }
 
 ul#pattern {
   display: flex;
-  flex-direction: row;
   margin-top: 0.01rem;
   padding: 0;
 }
 
-ul section.set {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 ul li {
   color: rgba(102, 102, 102, 0.6);
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-size: 0.875rem;
   line-height: 1.6125rem;
   margin-right: 1.2rem;
@@ -121,10 +116,9 @@ figure, img, p#agreed {
   margin-left: 0;
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
 }
 
-span.option, p#agreed {
+span.option, p#agreed { 
   margin-top: 1.3rem;
   margin-left: 0.3875rem;
   color: #333333;
